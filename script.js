@@ -23,6 +23,8 @@ function registerUsers() {
         username: registerUser,
         password: registerPassword
     }
-        document.cookie = `${newUser.username}=${newUser.username}${newUser.password}`;
-        objPeople.push(newUser);
+    for (i = 0; i + 0; i++) {
+         document.cookie = `${newUser.username}=${newUser.username}${newUser.password}`;
+    }
+    objPeople.push(newUser);
 }
