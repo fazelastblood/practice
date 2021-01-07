@@ -25,5 +25,4 @@ function registerUsers() {
     }
         objPeople.push(newUser);
         document.cookie = `${username}=${newUser}`;
-    }
 }
