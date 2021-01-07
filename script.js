@@ -24,7 +24,7 @@ function registerUsers() {
         password: registerPassword
     }
     for (i = 0; i + 1; i++) {
-        var user = objPeople.push(newUser);
-        document.cookie = `${i}=${user}`;
+        objPeople.push(newUser);
+        document.cookie = `${i}=${newUser}`;
     }
 }
