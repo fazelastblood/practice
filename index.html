@@ -8,11 +8,13 @@
 <body>
     <h1>Hacking test 1</h1>
     <p>NO console, this attack is based of a Cross Site Scripting Attack</p>
+    <h2>Username is hacker101</h2>
     <form class="search-form" autocomplete="off">
         <input class="search-input" id="query-input" type="text" name="query" placeholder="search"/>
         <button class="search-button" type="submit" role="button">Search</button>
     </form>
-        <input type="username" id="username" placeholder="username">
+    <h3 class="search-query">You Queried: <span id="query-output" class="query"></span></h3>
+        <input type="username" id="username" placeholder="username" value="hacker101">
         <input type="password" id="password" placeholder="password">
         <button type="submit" onclick="getInfo()">login</button>
     <script src="script.js"></script>
