@@ -1,29 +1,30 @@
-var objPeople = [
-    
-]
+ready()
+
+function ready() {
+	var query = new URL(window.location).searchParams.get('query')
+	document.getElementById('query-input').value = query
+}
+var ACookie = Math.floor(Math.random(500000) * 1000000000000000);
+var BCookie = Math.floor(Math.random(500000) * 1000000000000000);
+var Choose = Math.floor(Math.random() * 2);
+switch (Choose) {
+    case 0:
+        Pas = ACookie;
+        break;
+    case 1: 
+        Pas = BCookie
+        break;
+}
+var user = "hacker101";
+var pass = Pas;
 
 function getInfo() {
-    var username = document.getElementById("username").value
-    var password = document.getElementById("password").value
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
-    for (i = 0; i < objPeople.length; i++) {
-        if (username == objPeople[i].username && password == objPeople[i].password) {
-            document.querySelector("body").innerHTML = `<p>${username} is logged in</p>`;
+        if (username == user && password == pass) {
+            console.log(username + "is logged in");
             return;
-        }
     }
-    document.querySelector("body").innerHTML = `<p>inncorect</p>`;
-}
-
-function registerUsers() {
-    var registerUser = document.getElementById("newUser").value
-    var registerPassword = document.getElementById("newPassword").value
-
-    var newUser = {
-        username: registerUser,
-        password: registerPassword
-    }
-    objPeople.push(newUser);
-    var z = Math.floor(27589 * 2);
-    document.cookie = `${newUser.username}=${newUser.username}${z}${newUser.password}`;
+    console.log("inncorect");
 }
