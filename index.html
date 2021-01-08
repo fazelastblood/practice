@@ -1,23 +1,20 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Cookies</title>
 </head>
 <body>
-    <form>
-        <input type="username" id="username" autocomplete="false" placeholder="username">
-        <input type="password" id="password" autocomplete="false" placeholder="password">
-        <button type="button" onclick="getInfo()">Login</button>
+    <h1>Hacking test 1</h1>
+    <p>NO console, this attack is based of a Cross Site Scripting Attack</p>
+    <form class="search-form" autocomplete="off">
+        <input class="search-input" id="query-input" type="text" name="query" placeholder="search"/>
+        <button class="search-button" type="submit" role="button">Search</button>
     </form>
-
-    <form>
-        <input type="username" id="newUser" autocomplete="false" placeholder="username">
-        <input type="password" id="newPassword" autocomplete="false" placeholder="password">
-        <button type="button" onclick="registerUsers()">Signup</button>
-    </form>
-
+        <input type="username" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <button type="submit" onclick="getInfo()">login</button>
     <script src="script.js"></script>
 </body>
 </html>
